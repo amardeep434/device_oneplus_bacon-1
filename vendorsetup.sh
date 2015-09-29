@@ -1,3 +1,2 @@
-add_lunch_combo cm_bacon-user
-add_lunch_combo cm_bacon-userdebug
-add_lunch_combo cm_bacon-eng
+add_lunch_combo tipsy_bacon-user
+add_lunch_combo tipsy_bacon-eng
