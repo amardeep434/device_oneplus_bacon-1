@@ -54,14 +54,8 @@ GRAPHITE_OPTS := false
 ENABLE_GCCONLY := true
 
 # Kernel Toolchain
-KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/arm/arm-eabi-4.9-uber/bin
-<<<<<<< HEAD
-#KERNEL_TOOLCHAIN_PREFIX := arm-eabi-
-=======
-KERNEL_TOOLCHAIN_PREFIX := arm-eabi-
->>>>>>> 53c57cd... bc: uber 4.9 & enable some opts
-# Rom Toolchain
-TARGET_GCC_VERSION_EXP := 4.9-uber
+KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/arm/arm-linux-androideabi-4.9-kernel/bin
+KERNEL_TOOLCHAIN_PREFIX := arm-linux-androideabi
 
 # Kernel
 BOARD_KERNEL_BASE := 0x00000000
