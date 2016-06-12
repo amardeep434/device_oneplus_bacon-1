@@ -31,6 +31,9 @@ TARGET_NO_RADIOIMAGE := true
 TARGET_BOARD_PLATFORM := msm8974
 TARGET_BOARD_PLATFORM_GPU := qcom-adreno330
 
+# Build with Clang by default
+USE_CLANG_PLATFORM_BUILD := true
+
 # Architecture
 TARGET_ARCH := arm
 TARGET_ARCH_VARIANT := armv7-a-neon
@@ -43,16 +46,10 @@ TARGET_BOARD_INFO_FILE ?= $(PLATFORM_PATH)/board-info.txt
 
 # Tipsy additions
 BLOCK_BASED_OTA=false
-# Optimizations
-CLANG_O3 := true
-STRICT_ALIASING := false
-KRAIT_TUNINGS := true
-GRAPHITE_OPTS := false
-ENABLE_GCCONLY := true
 
 # Kernel Toolchain
-KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/arm/arm-linux-androideabi-4.9-kernel/bin
-KERNEL_TOOLCHAIN_PREFIX := arm-linux-androideabi
+#KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/arm/arm-linux-androideabi-4.9-kernel/bin
+#KERNEL_TOOLCHAIN_PREFIX := arm-linux-androideabi
 
 # Kernel
 BOARD_KERNEL_BASE := 0x00000000
