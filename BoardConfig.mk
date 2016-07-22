@@ -42,7 +42,7 @@ TARGET_CPU_VARIANT := krait
 TARGET_BOARD_INFO_FILE ?= $(PLATFORM_PATH)/board-info.txt
 
 # Tipsy additions
-BLOCK_BASED_OTA=false
+#BLOCK_BASED_OTA=false
 # Optimizations
 CLANG_O3 := true
 STRICT_ALIASING := false
