@@ -7,7 +7,7 @@
 #
 #      http://www.apache.org/licenses/LICENSE-2.0
 #
-# Unless required by applicable law or agreed to in writing, software
+# Unless required by applicable law or agreed to in writing, softwarec
 # distributed under the License is distributed on an "AS IS" BASIS,
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
@@ -43,21 +43,9 @@ TARGET_BOARD_INFO_FILE ?= $(PLATFORM_PATH)/board-info.txt
 
 # Tipsy additions
 #BLOCK_BASED_OTA=false
-# Optimizations
-CLANG_O3 := true
-STRICT_ALIASING := false
-KRAIT_TUNINGS := true
-GRAPHITE_OPTS := false
-ENABLE_GCCONLY := true
 
 # Enable workaround for slow rom flash
 BOARD_SUPPRESS_SECURE_ERASE := true
-
-# Kernel Toolchain
-KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/arm/arm-eabi-4.9-uber/bin
-KERNEL_TOOLCHAIN_PREFIX := arm-eabi-
-# Rom Toolchain
-TARGET_GCC_VERSION_EXP := 4.9-uber
 
 # Kernel
 BOARD_KERNEL_BASE := 0x00000000
@@ -220,3 +208,7 @@ endif
 endif
 
 -include vendor/oneplus/bacon/BoardConfigVendor.mk
+
+TARGET_CYANIDE_ROM=4.9
+TARGET_NDK_CYANIDE_ROM=4.9
+TARGET_CYANIDE_ARM=4.8
