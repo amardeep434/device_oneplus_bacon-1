@@ -22,7 +22,7 @@ $(call inherit-product, device/oneplus/bacon/bacon.mk)
 $(call inherit-product, vendor/cyanide/config/nfc_enhanced.mk)
 
 # Inherit some common Tipsy stuff.
-$(call inherit-product, vendor/cyanid/config/common_full_phone.mk)
+$(call inherit-product, vendor/cyanide/config/common_full_phone.mk)
 
 PRODUCT_NAME := cyanide_bacon
 PRODUCT_DEVICE := bacon
